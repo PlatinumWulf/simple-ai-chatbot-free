@@ -1,20 +1,20 @@
-# Simple AI Chatbot
+# Simple AI Chatbot Free
 
-Prosty chatbot AI z interfejsem webowym, który komunikuje się z modelami językowymi poprzez API OpenRouter.
+A simple AI chatbot with a web interface that communicates with language models via the OpenRouter API.
 
-## Funkcjonalności
+## Features
 
-- Elegancki, responsywny interfejs użytkownika
-- Wyraźne rozróżnienie między wiadomościami użytkownika a odpowiedziami bota
-- Animowany wskaźnik ładowania podczas przetwarzania odpowiedzi
-- Historia czatu zapisywana w pamięci przeglądarki (localStorage)
-- Automatyczne dodawanie instrukcji "odpowiadaj po polsku" do zapytań
-- Przewijalne okno czatu o stałej wysokości
+- Elegant, responsive user interface
+- Clear distinction between user messages and bot responses
+- Animated loading indicator during response processing
+- Chat history saved in browser memory (localStorage)
+- Automatic addition of "respond in Polish" instruction to queries
+- Scrollable chat window with fixed height
 
-## Struktura projektu
+## Project Structure
 
 ```
-simple-ai-bot/
+simple-ai-chatbot-free/
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
@@ -23,73 +23,74 @@ simple-ai-bot/
     ├── app.py
     ├── requirements.txt
     ├── .env.example
-    └── .env (nie dołączony do repozytorium)
+    └── .env (not included in the repository)
 ```
 
-## Wymagania techniczne
+## Technical Requirements
 
 ### Frontend
-- HTML5, CSS3 i vanilla JavaScript (bez frameworków)
-- Responsywny design dostosowany do różnych rozmiarów ekranów
+- HTML5, CSS3, and vanilla JavaScript (no frameworks)
+- Responsive design adapted to different screen sizes
 
 ### Backend
 - Python 3.8+
 - Flask
 - Flask-CORS
 - Requests
+- python-dotenv
 
-## Instalacja i uruchomienie
+## Installation and Setup
 
 ### Backend
 
-1. Przejdź do katalogu backend:
+1. Navigate to the backend directory:
    ```
    cd backend
    ```
 
-2. Zainstaluj wymagane biblioteki:
+2. Install the required libraries:
    ```
    pip install -r requirements.txt
    ```
 
-3. Skopiuj plik .env.example do .env:
+3. Copy the .env.example file to .env:
    ```
    cp .env.example .env
    ```
 
-4. Edytuj plik .env i dodaj swój klucz API OpenRouter:
+4. Edit the .env file and add your OpenRouter API key:
    ```
-   OPENROUTER_API_KEY=twój_klucz_api
+   OPENROUTER_API_KEY=your_api_key
    ```
 
-5. Uruchom serwer Flask:
+5. Run the Flask server:
    ```
    python app.py
    ```
 
 ### Frontend
 
-1. Przejdź do katalogu frontend:
+1. Navigate to the frontend directory:
    ```
    cd frontend
    ```
 
-2. Uruchom prosty serwer HTTP:
+2. Run a simple HTTP server:
    ```
    python -m http.server 8000
    ```
 
-3. Otwórz przeglądarkę i przejdź do:
+3. Open your browser and go to:
    ```
    http://localhost:8000
    ```
 
-## Jak uzyskać klucz API OpenRouter
+## How to Get an OpenRouter API Key
 
-1. Zarejestruj się na stronie [OpenRouter](https://openrouter.ai/)
-2. Przejdź do panelu API i wygeneruj swój klucz
-3. Dodaj klucz do pliku .env w katalogu backend
+1. Sign up at [OpenRouter](https://openrouter.ai/)
+2. Go to the API panel and generate your key
+3. Add the key to the .env file in the backend directory
 
-## Licencja
+## License
 
 MIT
