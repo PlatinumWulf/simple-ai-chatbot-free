@@ -8,7 +8,6 @@ A simple AI chatbot with a web interface that communicates with language models 
 - Clear distinction between user messages and bot responses
 - Animated loading indicator during response processing
 - Chat history saved in browser memory (localStorage)
-- Automatic addition of "respond in Polish" instruction to queries
 - Scrollable chat window with fixed height
 
 ## Project Structure
